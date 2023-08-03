@@ -1,0 +1,50 @@
+.header {
+  padding: 20px;
+}
+.navigation {
+  width: 100%;
+}
+.navigation__list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  font-size: 14px;
+}
+.navigation__item {
+  position: relative;
+}
+.navigation__link {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 10px;
+  background-color: orange;
+  border-radius: 4px;
+  transition: color 300ms linear;
+  &.active {
+    background-color: blue;
+  }
+}
+
+.navigation__count {
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  color: white;
+  border-radius: 50%;
+  background: red;
+}
+
+.svg__icon {
+  width: 20px;
+  height: 20px;
+  fill: gray;
+  transition: fill 300ms linear;
+}
